@@ -1,13 +1,22 @@
 # ftopindexmaker
-A top-level index maker for [fgallery](https://www.thregr.org/~wavexx/software/fgallery/) [(github)](https://github.com/wavexx/fgallery) written in dotnet core
+[ftopindexmaker](https://github.com/puargs/ftopindexmaker) is a top-level index maker for [fgallery](https://www.thregr.org/~wavexx/software/fgallery/) [(github)](https://github.com/wavexx/fgallery) written in dotnet core
 
 #### TLDR: Put several fgallery-created folders into one folder. Run this program and point it at that folder. You now have a top level gallery-of-albums!
 
+## Demo
+
+You may find a demo of the resulting album by [clicking this link](https://puargs.net/ftopindexmakerdemo/).
+
 ## Usage
+
+1. Create your albums in separate folders as normal by using [fgallery](https://www.thregr.org/~wavexx/software/fgallery/).
+2. Place each of the album folders into one containing folder. Note the location.
+3. Run the following command:
 
 `./ftopindexmaker /path/to/folder/containing/albums`
 
-Following this, you should simply find TWO files in the specified output location: index.html and style.css. These two files contain all the information necessary to allow the page to work.
+4. You should now simply find TWO files in the specified output location: index.html and style.css. These two files contain all the information necessary to allow the page to work.
+5. Place the entire structure somewhere on a web server.
 
 ## Additional Options
 
