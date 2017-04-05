@@ -1,0 +1,15 @@
+In order to publish, follow these steps:
+1) Find the line in project.json which looks like the following, and comment it out:
+    "type": "platform",
+
+2) From terminal, in the base folder, run the following commands:
+
+dotnet restore
+dotnet build -c release
+dotnet publish -c release -r ubuntu.16.10-x64
+dotnet publish -c release -r ubuntu.14.04-x64
+dotnet publish -c release -r win7-x64
+dotnet publish -c release -r win7-x86
+dotnet publish -c release -r osx.10.10-x64
+
+You may then zip up the contents of each of the /bin/netcoreapp1.1/{platform}/publish folders.

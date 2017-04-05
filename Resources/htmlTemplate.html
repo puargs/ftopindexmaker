@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{TITLE}</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body onload="ftim.start()">
+        <img id="background" src="{BACKGROUND}" />
+        <div id="noise" style="background-image: url('{NOISE}');"></div>
+        <div class="snippetHolder">
+            {BODY}
+        </div>
+    </body>
+    <script type="text/javascript">
+        var ftim = {
+            //this function resizes the width of each item on the page, since it is terribly difficult to do reliably cross-browsers without javascript.
+            start : function() {
+                var allHolders = document.getElementsByTagName("div");
+
+                for (var i = 0; i < allHolders.length; i++) {
+                    if (allHolders[i].className.indexOf("albumLink") > -1) {
+                        var innerImageWidth = allHolders[i].getElementsByTagName("img")[0].width;
+                        allHolders[i].style.width = innerImageWidth + "px";
+                    }
+                }
+            }
+        }
+    </script>
+</html>

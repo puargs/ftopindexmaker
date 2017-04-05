@@ -1,0 +1,63 @@
+
+.albumLink {
+  display: inline-block;
+  margin: 10px;
+  /*border-width: 2px 2px 0 2px;
+  border-color: #0C0C0C;
+  border-style: solid;*/
+  border-radius: 15px 15px 0px 0px;
+  /*box-shadow: -2px -5px 5px #888888;*/
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+90,0+100 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 90%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 90%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 90%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+  padding-bottom:15px;
+  overflow:hidden;
+}
+
+.albumLink a:link {
+  text-decoration:none;
+  color: #333333;
+}
+
+.albumLink img {
+  border-bottom: 3px solid black;
+}
+
+.albumLink a:visited,
+.albumLink a:hover,
+.albumLink a:active {
+  color: #333333;
+}
+
+body {
+  text-align:center;
+  
+  font-family: sans-serif;
+}
+
+.snippetHolder {
+  display:inline-block;
+  text-align:center;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left : 0;
+    width: 100%;
+    height: 100%;
+    z-index:-10;
+}
+
+#noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  z-index: -9;
+}
