@@ -7,7 +7,7 @@ A top-level index maker for [fgallery](https://www.thregr.org/~wavexx/software/f
 
 `./ftopindexmaker /path/to/folder/containing/albums`
 
-Following this, you should simply find TWO files: index.html and style.css. These two files contain all the information necessary to allow the page to work.
+Following this, you should simply find TWO files in the specified output location: index.html and style.css. These two files contain all the information necessary to allow the page to work.
 
 ## Additional Options
 
@@ -24,21 +24,25 @@ Following this, you should simply find TWO files: index.html and style.css. Thes
 
 If you don't want to download the code and compile yourself, I have provided a pre-compiled release for the following platforms:
 
-* ubuntu.16.10-x64
-* ubuntu.14.04-x64
-* win7-x64
-* win7-x86
-* osx.10.10-x64
+* [ubuntu.16.10-x64](https://github.com/puargs/ftopindexmaker/releases/download/v1.0/ftopindexmaker-Ubuntu.16.10-x64-1.0.tar.gz)
+* [ubuntu.14.04-x64](https://github.com/puargs/ftopindexmaker/releases/download/v1.0/ftopindexmaker-Ubuntu.14.04-x64-1.0.tar.gz)
+* [win7-x64](https://github.com/puargs/ftopindexmaker/releases/download/v1.0/ftopindexmaker-Winx64-1.0.zip)
+* [win7-x86](https://github.com/puargs/ftopindexmaker/releases/download/v1.0/ftopindexmaker-Winx86-1.0.zip)
+* [osx.10.10-x64](https://github.com/puargs/ftopindexmaker/releases/download/v1.0/ftopindexmaker-OSX-1.0.zip)
 
 ## Running from code
 
 1. Install dotnet core by following the [installation guide](https://www.microsoft.com/net/core) for your platform
 2. Create a directory for your stuff and clone into it
-  `mkdir ftopindexmaker`
-  `cd ftopindexmaker`
-  `git clone https://github.com/puargs/ftopindexmaker.git`
+```
+mkdir ftopindexmaker
+cd ftopindexmaker
+git clone https://github.com/puargs/ftopindexmaker.git
+```
 3. Run the program and supply your top-level folder location
-  `dotnet run /path/to/folder/containing/albums`
+```
+dotnet run /path/to/folder/containing/albums
+```
 
 ## Publishing instructions
 
