@@ -48,8 +48,9 @@ mkdir ftopindexmaker
 cd ftopindexmaker
 git clone https://github.com/puargs/ftopindexmaker.git
 ```
-3. Run the program and supply your top-level folder location
+3. Use "restore" to download/apply dependencies. Then run the program and supply your top-level folder location
 ```
+dotnet restore
 dotnet run /path/to/folder/containing/albums
 ```
 
